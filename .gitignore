@@ -1,0 +1,62 @@
+# Dependencies and package manager state
+node_modules/
+.pnpm-store/
+
+# Local runtime and generated native binaries
+runtime/*
+!runtime/.gitkeep
+native/*
+!native/.gitkeep
+*.exe
+*.dll
+*.pdb
+*.lib
+*.obj
+
+# Local application data, memory, secrets, and logs
+data/*
+!data/.gitkeep
+logs/*
+!logs/.gitkeep
+config/config.local.json
+data/config.local.json
+data/secrets.json
+.env
+.env.*
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.pid
+*.log
+
+# Build outputs and generated UI evidence
+src-tauri/target/
+src-tauri/gen/
+dist/
+build/
+coverage/
+.generated/
+artifacts/
+generated-images/
+outputs/
+data/ui-*
+data/edge-ui-check/
+src-tauri/target/
+
+# Local tooling and OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archives and installers
+*.zip
+*.msi
+*.msix
+*.nsis
+*.dmg
+*.AppImage
+*.deb
+*.rpm
